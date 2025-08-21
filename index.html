@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identifikasi Gambar AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Identifikasi Gambar AI</h1>
+        <p>Unggah sebuah gambar untuk melihat apa yang dipikirkannya.</p>
+
+        <div class="upload-area">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-label">
+                <span class="upload-text">Pilih Gambar</span>
+            </label>
+            <div id="imagePreview" class="image-preview"></div>
+        </div>
+        
+        <button id="predictButton" disabled>Identifikasi</button>
+
+        <div id="result" class="result">
+            <div class="loading">Memproses...</div>
+            <div class="result-content">
+                <h2 id="result-title">Hasil Prediksi:</h2>
+                <ul id="predictionsList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
